@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Request an Overnight Vande Bharat Sleeper Train</title>
+
+    <meta
+      name="description"
+      content="Support the request for an overnight Vande Bharat Sleeper train between Dadar and Jodhpur for Rajasthan's travelling community."
+    />
+
+    <meta name="theme-color" content="#f8f8f6" />
+
+    <style>
+      :root {
+        --background: #f8f8f6;
+        --surface: #ffffff;
+        --text: #191919;
+        --muted: #717171;
+        --border: #e8e8e5;
+        --accent: #245c45;
+        --accent-hover: #194833;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+          Arial, sans-serif;
+
+        background: var(--background);
+        color: var(--text);
+        min-height: 100vh;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .page {
+        width: 100%;
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 0 28px;
+      }
+
+      /* Header */
+
+      header {
+        height: 76px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        font-size: 15px;
+        font-weight: 650;
+        letter-spacing: -0.3px;
+      }
+
+      .brand-icon {
+        width: 34px;
+        height: 34px;
+        display: grid;
+        place-items: center;
+        background: var(--text);
+        color: white;
+        border-radius: 10px;
+        font-size: 17px;
+      }
+
+      .header-label {
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+      /* Main hero */
+
+      main {
+        padding: 78px 0 72px;
+      }
+
+      .hero {
+        max-width: 740px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 9px 13px;
+        border: 1px solid #dce7df;
+        border-radius: 100px;
+        background: #eef4ef;
+        color: var(--accent);
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+        margin-bottom: 26px;
+      }
+
+      .status-dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #438563;
+      }
+
+      h1 {
+        font-size: clamp(36px, 5.5vw, 62px);
+        line-height: 1.08;
+        letter-spacing: -2.8px;
+        font-weight: 650;
+        margin-bottom: 22px;
+      }
+
+      h1 span {
+        color: var(--accent);
+      }
+
+      .description {
+        max-width: 550px;
+        margin: 0 auto;
+        color: var(--muted);
+        font-size: 16px;
+        line-height: 1.8;
+      }
+
+      /* Route card */
+
+      .route-card {
+        max-width: 600px;
+        margin: 42px auto 30px;
+        padding: 28px;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        text-align: left;
+      }
+
+      .station {
+        flex: 1;
+      }
+
+      .station-label {
+        color: var(--muted);
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 9px;
+      }
+
+      .station-name {
+        font-size: 25px;
+        font-weight: 650;
+        letter-spacing: -0.8px;
+      }
+
+      .station-city {
+        margin-top: 5px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .route-middle {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        justify-content: center;
+        color: var(--accent);
+      }
+
+      .route-line {
+        height: 1px;
+        background: #b9cfc0;
+        flex: 1;
+        min-width: 15px;
+        position: relative;
+      }
+
+      .train-icon {
+        font-size: 23px;
+      }
+
+      /* Main action */
+
+      .action-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 13px;
+      }
+
+      .email-button {
+        width: 100%;
+        max-width: 380px;
+        min-height: 58px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        padding: 17px 24px;
+        border: none;
+        border-radius: 12px;
+        background: var(--accent);
+        color: #ffffff;
+        text-decoration: none;
+        font-family: inherit;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        transition:
+          background 0.2s ease,
+          transform 0.2s ease;
+      }
+
+      .email-button:hover {
+        background: var(--accent-hover);
+        transform: translateY(-2px);
+      }
+
+      .email-button:active {
+        transform: translateY(0);
+      }
+
+      .email-button:focus-visible {
+        outline: 3px solid #9bbdaa;
+        outline-offset: 4px;
+      }
+
+      .email-button svg {
+        width: 19px;
+        height: 19px;
+        flex-shrink: 0;
+      }
+
+      .helper-text {
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.7;
+        text-align: center;
+      }
+
+      /* Information section */
+
+      .details {
+        max-width: 740px;
+        margin: 76px auto 0;
+        padding-top: 30px;
+        border-top: 1px solid var(--border);
+      }
+
+      .details h2 {
+        font-size: 19px;
+        font-weight: 650;
+        letter-spacing: -0.5px;
+        margin-bottom: 22px;
+      }
+
+      .detail-row {
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 17px 0;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .detail-number {
+        width: 30px;
+        height: 30px;
+        flex-shrink: 0;
+        display: grid;
+        place-items: center;
+        border: 1px solid var(--border);
+        border-radius: 9px;
+        background: var(--surface);
+        color: var(--accent);
+        font-size: 12px;
+        font-weight: 650;
+      }
+
+      .detail-content h3 {
+        font-size: 14px;
+        font-weight: 600;
+        margin: 2px 0 6px;
+      }
+
+      .detail-content p {
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.7;
+      }
+
+      /* Footer */
+
+      footer {
+        padding: 28px 0;
+        border-top: 1px solid var(--border);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      footer a {
+        color: var(--text);
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        color: var(--accent);
+      }
+
+      /* Mobile */
+
+      @media (max-width: 600px) {
+        .page {
+          padding: 0 20px;
+        }
+
+        header {
+          height: 66px;
+        }
+
+        .brand {
+          font-size: 13px;
+          gap: 8px;
+        }
+
+        .brand-icon {
+          width: 31px;
+          height: 31px;
+          border-radius: 9px;
+        }
+
+        .header-label {
+          font-size: 10px;
+        }
+
+        main {
+          padding: 58px 0 50px;
+        }
+
+        .eyebrow {
+          font-size: 11px;
+          margin-bottom: 22px;
+        }
+
+        h1 {
+          font-size: clamp(36px, 10vw, 48px);
+          letter-spacing: -1.8px;
+          line-height: 1.1;
+          margin-bottom: 18px;
+        }
+
+        .description {
+          font-size: 14px;
+          line-height: 1.8;
+        }
+
+        .route-card {
+          padding: 21px 17px;
+          gap: 10px;
+          margin: 32px auto 25px;
+          border-radius: 14px;
+        }
+
+        .station-label {
+          font-size: 9px;
+          letter-spacing: 0.7px;
+        }
+
+        .station-name {
+          font-size: 21px;
+        }
+
+        .station-city {
+          font-size: 11px;
+        }
+
+        .route-middle {
+          gap: 5px;
+        }
+
+        .train-icon {
+          font-size: 19px;
+        }
+
+        .email-button {
+          max-width: none;
+          min-height: 56px;
+          font-size: 14px;
+          border-radius: 11px;
+        }
+
+        .helper-text {
+          font-size: 11px;
+        }
+
+        .details {
+          margin-top: 58px;
+          padding-top: 25px;
+        }
+
+        .details h2 {
+          font-size: 18px;
+        }
+
+        footer {
+          align-items: flex-start;
+          flex-direction: column;
+          padding: 23px 0;
+          line-height: 1.7;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          scroll-behavior: auto !important;
+          transition: none !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="page">
+      <header>
+        <div class="brand">
+          <div class="brand-icon" aria-hidden="true">↗</div>
+          <span>Marwar Pravasi Sangh</span>
+        </div>
+
+        <div class="header-label">A request for better connectivity</div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="eyebrow">
+            <span class="status-dot"></span>
+            Connecting Mumbai & Rajasthan
+          </div>
+
+          <h1>
+            A faster connection.<br />
+            <span>A better journey.</span>
+          </h1>
+
+          <p class="description">
+            Support the request for an overnight Vande Bharat Sleeper train
+            connecting Dadar and Jodhpur, making travel easier for Rajasthan's
+            community in Mumbai.
+          </p>
+
+          <div class="route-card">
+            <div class="station">
+              <div class="station-label">Departure</div>
+              <div class="station-name">Dadar</div>
+              <div class="station-city">Mumbai, Maharashtra</div>
+            </div>
+
+            <div class="route-middle" aria-label="Train route">
+              <div class="route-line"></div>
+              <span class="train-icon" aria-hidden="true">🚆</span>
+              <div class="route-line"></div>
+            </div>
+
+            <div class="station" style="text-align: right">
+              <div class="station-label">Destination</div>
+              <div class="station-name">Jodhpur</div>
+              <div class="station-city">Rajasthan</div>
+            </div>
+          </div>
+
+          <div class="action-area">
+            <a
+              class="email-button"
+              id="emailButton"
+              href="#"
+              aria-label="Open email application with the train request pre-filled"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                <path d="m3 7 9 6 9-6"></path>
+              </svg>
+
+              Send the Train Request
+            </a>
+
+            <p class="helper-text">
+              No form. No typing. Your email is prepared automatically.
+            </p>
+          </div>
+        </section>
+
+        <section class="details">
+          <h2>Why this connection matters</h2>
+
+          <div class="detail-row">
+            <div class="detail-number">01</div>
+            <div class="detail-content">
+              <h3>High demand for existing trains</h3>
+              <p>
+                Securing reservations on existing Mumbai–Rajasthan services can
+                be difficult, even when booking well in advance.
+              </p>
+            </div>
+          </div>
+
+          <div class="detail-row">
+            <div class="detail-number">02</div>
+            <div class="detail-content">
+              <h3>An overnight sleeper service</h3>
+              <p>
+                A proposed Dadar–Jodhpur–Dadar Vande Bharat Sleeper service
+                could provide another travel option for passengers.
+              </p>
+            </div>
+          </div>
+
+          <div class="detail-row">
+            <div class="detail-number">03</div>
+            <div class="detail-content">
+              <h3>A collective request</h3>
+              <p>
+                Send the pre-filled email to the listed railway authorities to
+                express support for considering this proposed service.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <span>Marwar Pravasi Sangh · Mumbai</span>
+        <a href="#emailButton">Support the request ↑</a>
+      </footer>
+    </div>
+
+    <script>
+      const recipient = "gm@wr.railnet.gov.in";
+
+      const ccRecipients = [
+        "mr@rb.railnet.gov.in",
+        "office.mosrs@gov.in",
+        "crb@rb.railnet.gov.in",
+        "gm@nwr.railnet.gov.in",
+      ];
+
+      const subject = "New Sleeper Vande Bharat Train";
+
+      const body = `Dear Madam / Sir,
+
+I belong from Rajasthan. Many people of Rajasthani origin, particularly the Marwari community, are integrated into Mumbai's large business and trading class, often grouped in South Mumbai (such as Walkeshwar, Marine Drive, and Malabar Hill) and northern suburbs. Official breakdowns historically note around 300,000 to 330,000 individuals from Rajasthan residing in the Mumbai Metropolitan Region.
+
+It is very hard to get a reservation in 12480 / 14707 / 14702 / 12490 / 20484 trains, even in 2A class and 40–50 days in advance.
+
+On behalf of Marwar Pravasi Sangh, Mumbai, I hereby sincerely request you to start an Overnight Vande Bharat Sleeper Dadar - Jodhpur - Dadar since a new pit line is ready at Dadar Mid Town Terminus.
+
+Jai Hind
+
+Thanks & Regards,
+
+Yours Faithfully,
+Name
+Mobile No.`;
+
+      const emailButton = document.getElementById("emailButton");
+
+      const mailtoLink =
+        "mailto:" +
+        recipient +
+        "?cc=" +
+        encodeURIComponent(ccRecipients.join(",")) +
+        "&subject=" +
+        encodeURIComponent(subject) +
+        "&body=" +
+        encodeURIComponent(body);
+
+      emailButton.href = mailtoLink;
+    </script>
+  </body>
+</html>
+
